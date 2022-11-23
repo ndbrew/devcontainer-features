@@ -1,0 +1,17 @@
+{
+    "name": "sops",
+    "id": "sops",
+    "version": "1.0.0",
+    "documentationURL": "https://github.com/ndbrew/devcontainer-features/tree/main/src/sops",
+    "description": "Installs sops (https://github.com/mozilla/sops)",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "Select or enter a sops version."
+        }
+    }
+}
