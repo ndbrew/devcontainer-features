@@ -13,5 +13,12 @@
             "default": "latest",
             "description": "Select or enter a sops version."
         }
-    }
+    },
+    "mounts": [
+        {
+            "source": "${localEnv:HOME}/.config/sops",
+            "target": "${containerEnv:HOME}/.config/sops",
+            "type": "volume"
+        }
+    ]
 }
