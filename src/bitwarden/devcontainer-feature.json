@@ -1,0 +1,17 @@
+{
+    "name": "bitwarden",
+    "id": "bw",
+    "version": "1.0.0",
+    "documentationURL": "https://github.com/ndbrew/devcontainer-features/tree/main/src/bitwarden",
+    "description": "Installs Bitwarden CLI (https://github.com/bitwarden/cli)",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "Select or enter a bw version."
+        }
+    }
+}
