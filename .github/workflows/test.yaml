@@ -15,6 +15,7 @@ jobs:
         features:
           - sops
           - bitwarden
+          - git-secrets
         baseImage:
           - debian:latest
           - ubuntu:latest
