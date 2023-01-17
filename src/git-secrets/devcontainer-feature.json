@@ -1,0 +1,27 @@
+{
+    "name": "git-secrets",
+    "id": "git-secrets",
+    "version": "0.1.0",
+    "documentationURL": "https://github.com/ndbrew/devcontainer-features/tree/main/src/git-secrets",
+    "description": "Installs git-secrets",
+    "options": {
+        "fork": {
+            "type": "string",
+            "proposals": [
+                "https://github.com/awslabs/git-secrets",
+                "https://github.com/msalemcode/git-secrets"
+            ],
+            "default": "https://github.com/awslabs/git-secrets",
+            "description": "Select the git-secrets fork to install."
+        },
+        "version": {
+            "type": "string",
+            "proposals": [
+                "master",
+                "1.3.0"
+            ],
+            "default": "1.3.0",
+            "description": "Select the git-secrets release."
+        }
+    }
+}
