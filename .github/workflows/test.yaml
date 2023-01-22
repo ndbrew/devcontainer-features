@@ -16,6 +16,7 @@ jobs:
           - sops
           - bitwarden
           - git-secrets
+          - pyenv
         baseImage:
           - debian:latest
           - ubuntu:latest
