@@ -1,0 +1,17 @@
+{
+    "name": "pyenv",
+    "id": "pyenv",
+    "version": "0.1.0",
+    "documentationURL": "https://github.com/ndbrew/devcontainer-features/tree/main/src/pyenv",
+    "description": "Installs pyenv",
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "Select the pyenv release."
+        }
+    }
+}
