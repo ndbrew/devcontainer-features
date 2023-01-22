@@ -66,9 +66,9 @@ check_packages curl git ca-certificates unzip
 if [ "${GS_VERSION}" = "master" ]; then
   curl -o /tmp/gs.zip -L ${GS_FORK}/archive/refs/heads/master.zip
 else
-  find_version_from_git_tags GS_VERSION  "tags/"
+  find_version_from_git_tags "GS_VERSION" "${GS_FORK}" "tags/"
   curl -o /tmp/gs.zip -L ${GS_FORK}/archive/refs/tags/${GS_VERSION}.zip
 fi
 unzip /tmp/gs.zip
-sudo mv git-secrets-${GS_VERSION}/git-secrets /usr/local/bin/git-secrets
+mv git-secrets-${GS_VERSION}/git-secrets /usr/local/bin/git-secrets
 rm -rf /tmp/gs.zip /tmp/git-secrets-${GS_VERSION}
