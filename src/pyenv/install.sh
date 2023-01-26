@@ -70,12 +70,13 @@ cd /tmp/
 tar -xzvf pyenv.tar.gz
 cp -R pyenv-${PYENV_VERSION} /usr/share/pyenv
 rm -rf /tmp/pyenv.tar.gz /tmp/pyenv-*
-PYENV_RC_OUT=$(cat <<EOF
-export PYENV_ROOT="\$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="/usr/share/pyenv/bin:\$PATH"
-eval "\$(pyenv init -)"
-EOF
-)
 
-[ -f /etc/zsh/zshrc ] && echo $PYENV_RC_OUT >> /etc/zsh/zshrc
-[ -f /etc/bash.bashrc ] && echo $PYENV_RC_OUT >> /etc/bash.bashrc
+write_rc() {
+    RCFILE=$1
+    echo 'export PYENV_ROOT="$HOME/.pyenv"' >> $RCFILE
+    echo 'command -v pyenv >/dev/null || export PATH="/usr/share/pyenv/bin:$PATH"' >> $RCFILE
+    echo 'eval "$(pyenv init -)"' >> $RCFILE
+}
+
+[ -f /etc/zsh/zshrc ] && write_rc /etc/zsh/zshrc
+[ -f /etc/bash.bashrc ] && write_rc /etc/bash.bashrc
