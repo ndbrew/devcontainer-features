@@ -1,0 +1,20 @@
+{
+    "id": "gitleaks",
+    "version": "1.0.0",
+    "name": "gitleaks (via Github Releases)",
+    "documentationURL": "http://github.com/ndbrew/devcontainers-features/tree/main/src/gitleaks",
+    "description": "Gitleaks is a SAST tool for detecting and preventing hardcoded secrets like passwords, api keys, and tokens in git repos.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/gh-release"
+    ]
+}
