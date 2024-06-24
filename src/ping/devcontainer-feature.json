@@ -1,0 +1,11 @@
+{
+    "id": "ping",
+    "version": "0.0.1",
+    "name": "ping (via apt-get)",
+    "documentationURL": "http://github.com/ndbrew/devcontainers-features/tree/main/src/ping",
+    "description": "Ping command",
+    "options": {},
+    "installsAfter": [
+        "ghcr.io/devcontainers-contrib/features/apt-get-packages"
+    ]
+}
