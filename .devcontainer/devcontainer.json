@@ -19,5 +19,5 @@
     "ghcr.io/lukewiwa/features/shellcheck:0.2.3": {}
 
   },
-  "postCreateCommand": "/bin/bash -ex ./.devcontainer/setup.sh > postCreateCommand.log"
+  "postCreateCommand": "/bin/bash -ex ./.devcontainer/setup.sh"
 }
