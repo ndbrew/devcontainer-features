@@ -1,13 +1,13 @@
 
-# Ansible (via pipx) (ansible)
+# talosctl (via asdf) (talosctl-asdf)
 
-Ansible is a suite of software tools that enables infrastructure as code.
+Talos Linux CLI.
 
 ## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/ndbrew/devcontainer-features/ansible:2": {}
+    "ghcr.io/ndbrew/devcontainer-features/talosctl-asdf:0": {}
 }
 ```
 

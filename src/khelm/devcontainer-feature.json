@@ -1,0 +1,18 @@
+{
+    "id": "khelm",
+    "version": "0.0.1",
+    "name": "khelm (via Github Releases)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/khelm",
+    "description": "A Helm chart templating CLI, kustomize plugin and containerized kustomize/kpt KRM function.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": []
+}

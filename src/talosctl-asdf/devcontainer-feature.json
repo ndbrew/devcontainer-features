@@ -1,0 +1,20 @@
+{
+    "id": "talosctl-asdf",
+    "version": "0.0.1",
+    "name": "talosctl (via asdf)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/talosctl-asdf",
+    "description": "Talos Linux CLI.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/ndbrew/devcontainer-features/asdf-package"
+    ]
+}

@@ -1,13 +1,13 @@
 
-# Ansible (via pipx) (ansible)
+# kustomize sops (via Github Releases) (ksops)
 
-Ansible is a suite of software tools that enables infrastructure as code.
+KSOPS - A Flexible Kustomize Plugin for SOPS Encrypted Resources.
 
 ## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/ndbrew/devcontainer-features/ansible:2": {}
+    "ghcr.io/ndbrew/devcontainer-features/ksops:0": {}
 }
 ```
 

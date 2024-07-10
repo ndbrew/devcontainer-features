@@ -1,13 +1,13 @@
 
-# Ansible (via pipx) (ansible)
+# khelm (via Github Releases) (khelm)
 
-Ansible is a suite of software tools that enables infrastructure as code.
+A Helm chart templating CLI, kustomize plugin and containerized kustomize/kpt KRM function.
 
 ## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/ndbrew/devcontainer-features/ansible:2": {}
+    "ghcr.io/ndbrew/devcontainer-features/khelm:0": {}
 }
 ```
 

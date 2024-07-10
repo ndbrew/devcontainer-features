@@ -1,13 +1,13 @@
 
-# Ansible (via pipx) (ansible)
+# kubectl (via asdf) (kubectl-asdf)
 
-Ansible is a suite of software tools that enables infrastructure as code.
+Issue tracker and mirror of kubectl code.
 
 ## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/ndbrew/devcontainer-features/ansible:2": {}
+    "ghcr.io/ndbrew/devcontainer-features/kubectl-asdf:0": {}
 }
 ```
 

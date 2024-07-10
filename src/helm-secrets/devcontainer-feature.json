@@ -1,0 +1,18 @@
+{
+    "id": "helm-secrets",
+    "version": "0.0.1",
+    "name": "helm-secrets",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/helm-secrets",
+    "description": "A helm plugin that help manage secrets with Git workflow and store them anywhere.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": []
+}

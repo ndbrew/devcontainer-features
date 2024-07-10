@@ -1,13 +1,13 @@
 
-# Ansible (via pipx) (ansible)
+# sshpass (via apt-get) (sshpass)
 
-Ansible is a suite of software tools that enables infrastructure as code.
+Non-interactive ssh password authentication
 
 ## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/ndbrew/devcontainer-features/ansible:2": {}
+    "ghcr.io/ndbrew/devcontainer-features/sshpass:1": {}
 }
 ```
 
@@ -15,7 +15,7 @@ Ansible is a suite of software tools that enables infrastructure as code.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version to install. | string | latest |
+
 
 
 
