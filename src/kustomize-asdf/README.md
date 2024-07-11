@@ -1,13 +1,13 @@
 
-# Ansible (via pipx) (ansible)
+# kustomize (via asdf) (kustomize-asdf)
 
-Ansible is a suite of software tools that enables infrastructure as code.
+Customization of kubernetes YAML configurations.
 
 ## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/ndbrew/devcontainer-features/ansible:2": {}
+    "ghcr.io/ndbrew/devcontainer-features/kustomize-asdf:0": {}
 }
 ```
 

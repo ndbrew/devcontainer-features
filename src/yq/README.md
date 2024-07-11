@@ -1,13 +1,13 @@
 
-# Ansible (via pipx) (ansible)
+# yq (via Github Releases) (yq)
 
-Ansible is a suite of software tools that enables infrastructure as code.
+yq is a portable command-line YAML, JSON, XML, CSV, TOML and properties processor.
 
 ## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/ndbrew/devcontainer-features/ansible:2": {}
+    "ghcr.io/ndbrew/devcontainer-features/yq:0": {}
 }
 ```
 

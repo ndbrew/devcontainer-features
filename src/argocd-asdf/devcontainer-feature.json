@@ -1,0 +1,20 @@
+{
+    "id": "argocd-asdf",
+    "version": "0.0.1",
+    "name": "argocd (via asdf)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/argocd-asdf",
+    "description": "Declarative Continuous Deployment for Kubernetes.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/ndbrew/devcontainer-features/asdf-package"
+    ]
+}

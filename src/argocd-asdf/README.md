@@ -1,13 +1,13 @@
 
-# Ansible (via pipx) (ansible)
+# argocd (via asdf) (argocd-asdf)
 
-Ansible is a suite of software tools that enables infrastructure as code.
+Declarative Continuous Deployment for Kubernetes.
 
 ## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/ndbrew/devcontainer-features/ansible:2": {}
+    "ghcr.io/ndbrew/devcontainer-features/argocd-asdf:0": {}
 }
 ```
 

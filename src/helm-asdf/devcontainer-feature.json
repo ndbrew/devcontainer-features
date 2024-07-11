@@ -1,0 +1,20 @@
+{
+    "id": "helm-asdf",
+    "version": "0.0.1",
+    "name": "helm (via asdf)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/helm-asdf",
+    "description": "The Kubernetes Package Manager",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/ndbrew/devcontainer-features/asdf-package"
+    ]
+}

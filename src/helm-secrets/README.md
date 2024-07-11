@@ -1,13 +1,13 @@
 
-# Ansible (via pipx) (ansible)
+# helm-secrets (helm-secrets)
 
-Ansible is a suite of software tools that enables infrastructure as code.
+A helm plugin that help manage secrets with Git workflow and store them anywhere.
 
 ## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/ndbrew/devcontainer-features/ansible:2": {}
+    "ghcr.io/ndbrew/devcontainer-features/helm-secrets:0": {}
 }
 ```
 

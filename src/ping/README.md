@@ -1,13 +1,13 @@
 
-# Ansible (via pipx) (ansible)
+# ping (via apt-get) (ping)
 
-Ansible is a suite of software tools that enables infrastructure as code.
+Ping command
 
 ## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/ndbrew/devcontainer-features/ansible:2": {}
+    "ghcr.io/ndbrew/devcontainer-features/ping:0": {}
 }
 ```
 
@@ -15,7 +15,7 @@ Ansible is a suite of software tools that enables infrastructure as code.
 
 | Options Id | Description | Type | Default Value |
 |-----|-----|-----|-----|
-| version | Select the version to install. | string | latest |
+
 
 
 

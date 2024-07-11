@@ -1,13 +1,13 @@
 
-# Ansible (via pipx) (ansible)
+# velero (via asdf) (velero-asdf)
 
-Ansible is a suite of software tools that enables infrastructure as code.
+Velero CLI
 
 ## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/ndbrew/devcontainer-features/ansible:2": {}
+    "ghcr.io/ndbrew/devcontainer-features/velero-asdf:0": {}
 }
 ```
 

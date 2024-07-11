@@ -1,0 +1,20 @@
+{
+    "id": "kubectl-asdf",
+    "version": "0.0.1",
+    "name": "kubectl (via asdf)",
+    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/kubectl-asdf",
+    "description": "Issue tracker and mirror of kubectl code.",
+    "options": {
+        "version": {
+            "default": "latest",
+            "description": "Select the version to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": [
+        "ghcr.io/ndbrew/devcontainer-features/asdf-package"
+    ]
+}
