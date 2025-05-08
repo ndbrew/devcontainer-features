@@ -1,6 +1,6 @@
 {
     "id": "kubectl-asdf",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "name": "kubectl (via asdf)",
     "documentationURL": "http://github.com/ndbrew/devcontainer-features/tree/main/src/kubectl-asdf",
     "description": "Issue tracker and mirror of kubectl code.",

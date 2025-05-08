@@ -1,7 +1,7 @@
 {
     "id": "sshpass-apt-get",
-    "version": "1.0.0",
-    "name": "sshpass (via apt-get)",
+    "version": "1.0.1",
+    "name": "sshpass (via apt-get) (sshpass-apt-get)",
     "documentationURL": "http://github.com/ndbrew/devcontainers-features/tree/main/src/sshpass",
     "description": "Non-interactive ssh password authentication",
     "options": {},

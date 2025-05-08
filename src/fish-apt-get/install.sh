@@ -15,7 +15,7 @@ ensure_nanolayer nanolayer_location "v0.5.6"
 $nanolayer_location \
     install \
     devcontainer-feature \
-    "ghcr.io/devcontainers-extra/features/apt-get-packages:1.0.6" \
+    "ghcr.io/ndbrew/devcontainer-features/apt-get-packages:1.0.8" \
     --option packages='fish' --option ppas='ppa:fish-shell/release-4'
 
 

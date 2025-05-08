@@ -14,7 +14,7 @@ ensure_nanolayer nanolayer_location "v0.5.6"
 $nanolayer_location \
     install \
     devcontainer-feature \
-    "ghcr.io/ndbrew/devcontainer-features/gh-release:1.0.25" \
+    "ghcr.io/ndbrew/devcontainer-features/gh-release:1.0.26" \
     --option repo='getsops/sops' --option binaryNames='sops' --option version="$VERSION"
     
 
