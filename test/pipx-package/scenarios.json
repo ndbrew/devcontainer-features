@@ -10,7 +10,7 @@
         }
     },
     "install_black": {
-        "image": "debian:bullseye",
+        "image": "debian:bookworm",
         "features": {
             "pipx-package": {
                 "version": "latest",
@@ -20,7 +20,7 @@
         }
     },
     "install_precommit": {
-        "image": "mcr.microsoft.com/devcontainers/python:1-3.11-bullseye",
+        "image": "mcr.microsoft.com/devcontainers/python:3.11",
         "features": {
             "pipx-package": {
                 "version": "latest",
@@ -29,7 +29,7 @@
         }
     },
     "install_black_custom_interpreter": {
-        "image": "debian:bullseye",
+        "image": "debian:bookworm",
         "features": {
             "ghcr.io/devcontainers/features/python:1": {"version": "3.8.10"},
             "pipx-package": {
