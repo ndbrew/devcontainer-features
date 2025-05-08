@@ -14,7 +14,7 @@ ensure_nanolayer nanolayer_location "v0.5.6"
 $nanolayer_location \
     install \
     devcontainer-feature \
-    "ghcr.io/ndbrew/devcontainer-features/pipx-package:1.1.8" \
+    "ghcr.io/ndbrew/devcontainer-features/pipx-package:1.1.10" \
     --option package='pre-commit' --option version="$VERSION"
     
 
