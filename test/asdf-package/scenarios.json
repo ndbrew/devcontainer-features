@@ -1,6 +1,6 @@
 {
     "install_rabbitmq": {
-        "image": "debian:bullseye",
+        "image": "debian:bookworm",
         "features": {
             "ghcr.io/ndbrew/devcontainer-features/apt-get-packages" : {"packages": "xz-utils"},
             "asdf-package": {
@@ -11,7 +11,7 @@
         }
     },
     "install_act": {
-        "image": "debian:bullseye",
+        "image": "debian:bookworm",
         "features": {
             "asdf-package": {
                 "version": "latest",
@@ -20,7 +20,7 @@
         }
     },
     "install_act_with_repo": {
-        "image": "debian:bullseye",
+        "image": "debian:bookworm",
         "features": {
             "asdf-package": {
                 "version": "latest",
@@ -30,7 +30,7 @@
         }
     },
     "install_terraform_alpine": {
-        "image": "mcr.microsoft.com/devcontainers/base:alpine-3.17",
+        "image": "mcr.microsoft.com/devcontainers/base:alpine",
         "features": {
             "asdf-package": {
                 "version": "latest",

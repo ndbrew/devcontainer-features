@@ -1,5 +1,5 @@
 {
-    "id": "sshpass",
+    "id": "sshpass-apt-get",
     "version": "1.0.0",
     "name": "sshpass (via apt-get)",
     "documentationURL": "http://github.com/ndbrew/devcontainers-features/tree/main/src/sshpass",

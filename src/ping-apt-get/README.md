@@ -1,13 +1,13 @@
 
-# sshpass (via apt-get) (sshpass)
+# ping (via apt-get) (ping-apt-get)
 
-Non-interactive ssh password authentication
+Ping command
 
 ## Example Usage
 
 ```json
 "features": {
-    "ghcr.io/ndbrew/devcontainer-features/sshpass:1": {}
+    "ghcr.io/ndbrew/devcontainer-features/ping-apt-get:0": {}
 }
 ```
 
