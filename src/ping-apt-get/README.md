@@ -1,5 +1,5 @@
 
-# ping (via apt-get) (ping)
+# ping (via apt-get) (ping-apt-get)
 
 Ping command
 
@@ -7,7 +7,7 @@ Ping command
 
 ```json
 "features": {
-    "ghcr.io/ndbrew/devcontainer-features/ping:0": {}
+    "ghcr.io/ndbrew/devcontainer-features/ping-apt-get:0": {}
 }
 ```
 

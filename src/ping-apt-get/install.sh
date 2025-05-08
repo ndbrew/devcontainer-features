@@ -1,4 +1,3 @@
-
 set -e
 
 . ./library_scripts.sh

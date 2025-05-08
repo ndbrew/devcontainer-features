@@ -19,7 +19,8 @@ jobs:
     if: ${{ github.ref == 'refs/heads/main' }}
     runs-on: ubuntu-latest
     permissions:
-      contents: read
+      contents: write
+      pull-requests: write
       packages: write
     steps:
       - uses: actions/checkout@v3
@@ -30,6 +31,6 @@ jobs:
           publish-features: "true"
           base-path-to-features: "./src"
           generate-docs: "false"
-          
+
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
