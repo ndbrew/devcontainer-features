@@ -1,0 +1,11 @@
+{
+    "id": "nushell-apt-get",
+    "version": "0.0.1",
+    "name": "nushell (via apt-get) (nushell-apt-get)",
+    "documentationURL": "http://github.com/ndbrew/devcontainers-features/tree/main/src/nushell-apt-get",
+    "description": "A new type of shell",
+    "options": {},
+    "installsAfter": [
+        "ghcr.io/ndbrew/devcontainer-features/apt-get-packages"
+    ]
+}
