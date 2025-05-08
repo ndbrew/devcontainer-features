@@ -1,6 +1,6 @@
 {
     "id": "kustomize-asdf",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "name": "kustomize (via asdf)",
     "documentationURL": "http://github.com/ndbrew/devcontainer-features/tree/main/src/kustomize-asdf",
     "description": "Customization of kubernetes YAML configurations.",

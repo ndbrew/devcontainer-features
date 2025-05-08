@@ -1,6 +1,6 @@
 {
     "id": "ping-apt-get",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "name": "ping (via apt-get) (ping-apt-get)",
     "documentationURL": "http://github.com/ndbrew/devcontainers-features/tree/main/src/ping-apt-get",
     "description": "Ping command",
