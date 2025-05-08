@@ -6,6 +6,6 @@
     "description": "Ping command",
     "options": {},
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/apt-get-packages"
+        "ghcr.io/ndbrew/devcontainer-features/apt-get-packages"
     ]
 }

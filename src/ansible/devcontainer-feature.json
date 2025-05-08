@@ -2,7 +2,7 @@
     "id": "ansible",
     "version": "2.0.17",
     "name": "Ansible (via pipx)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/ansible",
+    "documentationURL": "http://github.com/ndbrew/devcontainer-features/tree/main/src/ansible",
     "description": "Ansible is a suite of software tools that enables infrastructure as code.",
     "options": {
         "version": {
@@ -15,7 +15,7 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/pipx-package",
+        "ghcr.io/ndbrew/devcontainer-features/pipx-package",
         "ghcr.io/devcontainers/features/python"
     ]
 }

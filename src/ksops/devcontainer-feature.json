@@ -2,7 +2,7 @@
     "id": "ksops",
     "version": "0.0.1",
     "name": "kustomize sops (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/ksops",
+    "documentationURL": "http://github.com/ndbrew/devcontainer-features/tree/main/src/ksops",
     "description": "KSOPS - A Flexible Kustomize Plugin for SOPS Encrypted Resources.",
     "options": {
         "version": {
