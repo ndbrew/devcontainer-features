@@ -1,0 +1,80 @@
+{
+    "id": "gh-release",
+    "version": "1.0.25",
+    "name": "Github Release",
+    "documentationURL": "http://github.com/ndbrew/devcontainer-features/tree/main/src/gh-release",
+    "description": "Github Release feature will download, extract and add to path a release binary from a given repo",
+    "options": {
+        "repo": {
+            "default": "",
+            "description": "Select the version of the github release binary to install.",
+            "proposals": [
+                "digitalocean/doctl",
+                "argoproj/argo-cd",
+                "tenable/terrascan"
+            ],
+            "type": "string"
+        },
+        "binaryNames": {
+            "default": "",
+            "description": "The target binary name (Comma separated in case there are multiple binaries in the same asset). For example, for Github CLI the binary name would be simply 'gh'. For DigitalOcean CLI: 'doctl'. For etcd it would be two: 'etcd,etcdctl'",
+            "proposals": [
+                "gh",
+                "doctl",
+                "etcd,etcdctl"
+            ],
+            "type": "string"
+        },
+        "version": {
+            "default": "latest",
+            "description": "Select the version of the github release binary to install.",
+            "proposals": [
+                "latest"
+            ],
+            "type": "string"
+        },
+        "assetRegex": {
+            "default": "",
+            "description": "An optional filtering regex to help point the correct release asset.",
+            "type": "string"
+        },
+        "releaseTagRegex": {
+            "default": "",
+            "description": "An optional filtering regex to help point the correct release git tag.",
+            "type": "string"
+        },
+        "binLocation": {
+            "default": "/usr/local/bin",
+            "description": "Location to download the target binary to. Typically a location which exist under PATH variable",
+            "proposals": [
+                "/usr/local/bin"
+            ],
+            "type": "string"
+        },
+        "libName": {
+            "default": "",
+            "description": "Name for the lib dir (if exists). Will default to binary name if not given",
+            "type": "string"
+        },
+        "libLocation": {
+            "default": "/usr/local/lib",
+            "description": "Any lib files (if exists) will be downloaded into this location. The binary will then be soft linked from the lib location to the bin location",
+            "proposals": [
+                "/usr/local/lib"
+            ],
+            "type": "string"
+        },
+        "additionalFlags": {
+            "default": "",
+            "description": "(Optional) Any additional flags for the 'nanolayer install gh-release' command ",
+            "proposals": [
+                "--no-filter-assets-by-platform",
+                "--no-filter-assets-by-architecture",
+                "--no-filter-assets-by-distro",
+                "--no-filter-assets-by-misc"
+            ],
+            "type": "string"
+        }
+    },
+    "installsAfter": []
+}

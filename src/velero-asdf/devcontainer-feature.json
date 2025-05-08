@@ -2,7 +2,7 @@
     "id": "velero-asdf",
     "version": "0.0.1",
     "name": "velero (via asdf)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/velero-asdf",
+    "documentationURL": "http://github.com/ndbrew/devcontainer-features/tree/main/src/velero-asdf",
     "description": "Velero CLI",
     "options": {
         "version": {
