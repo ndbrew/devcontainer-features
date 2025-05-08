@@ -13,13 +13,9 @@ ensure_nanolayer nanolayer_location "v0.5.6"
 
 ppas_cmd=$(if ! [[ -z $PPAS ]]; then echo --ppas "${PPAS}" ; fi)
 force_ppas_cmd=$(if [[ $FORCE_PPAS_ON_NON_UBUNTU == "true" ]]; then echo --force-ppas-on-non-ubuntu; else echo  --no-force-ppas-on-non-ubuntu ; fi)
-clean_ppas_cmd=$(if [[ $CLEAN_PPAS == "true" ]]; then echo --clean-ppas; else echo  --no-clean-ppas ; fi)
-preserve_apt_list_cmd=$(if [[ $PRESERVE_APT_LIST == "true" ]]; then echo --preserve-apt-list; else echo  --no-preserve-apt-list ; fi)
 
 $nanolayer_location install apt-get "$PACKAGES" \
    $ppas_cmd \
-   $force_ppas_cmd \
-   $clean_ppas_cmd \
-   $preserve_apt_list_cmd \
+   $force_ppas_cmd
 
 

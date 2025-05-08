@@ -14,7 +14,7 @@ ensure_nanolayer nanolayer_location "v0.5.6"
 $nanolayer_location \
     install \
     devcontainer-feature \
-    "ghcr.io/ndbrew/devcontainer-features/apt-get-packages:1.0.4" \
+    "ghcr.io/ndbrew/devcontainer-features/apt-get-packages:1.0.7" \
     --option packages='sshpass'
     
 
