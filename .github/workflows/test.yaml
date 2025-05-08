@@ -29,11 +29,11 @@ on:
     - cron:  '0 1 * * *'
 
   pull_request:
-  
+
   push:
     branches:
       - main
-      
+
 jobs:
 
   find-features:
@@ -44,10 +44,10 @@ jobs:
       all-features: ${{ steps.list-features.outputs.all_features }}
       changed-features: ${{ steps.list-features.outputs.changed_features }}
     steps:
-      - uses: actions/checkout@v3   
+      - uses: actions/checkout@v3
       - run: |
           echo ${{ inputs.enabled  }}
-          echo ${{ github.event_name  }} 
+          echo ${{ github.event_name  }}
 
       - id: list-features
         uses: ./.github/actions/list-changed-features-action
@@ -63,26 +63,28 @@ jobs:
       - name: "resolving features to test"
         id: resolve_features
         run: |
-          if [ ${{ github.event_name	}} == 'pull_request' ]; then
+          if [ ${{ github.event_name }} == 'pull_request' ]; then
             echo 'features_to_test=${{ needs.find-features.outputs.changed-features }}' >> $GITHUB_OUTPUT
 
-          elif [ ${{ github.event_name	}} == 'push' ]; then
+          elif [ ${{ github.event_name }} == 'push' ]; then
             echo 'features_to_test=${{ needs.find-features.outputs.changed-features }}' >> $GITHUB_OUTPUT
-          
-          elif [ ${{ github.event_name	}} == 'workflow_dispatch' ]; then
 
+          elif [ ${{ github.event_name }} == 'workflow_dispatch' ]; then
             if [ ${{ inputs.on_changes_only }} == 'true' ]; then
               echo 'features_to_test=${{ needs.find-features.outputs.changed-features }}' >> $GITHUB_OUTPUT
             else
               echo 'features_to_test=${{ needs.find-features.outputs.all-features }}' >> $GITHUB_OUTPUT
             fi
-          
-          elif [ ${{ github.event_name	}} == 'workflow_call' ]; then
+
+          elif [ ${{ github.event_name }} == 'workflow_call' ]; then
             if [ ${{ inputs.on_changes_only }} == 'true' ]; then
               echo 'features_to_test=${{ needs.find-features.outputs.changed-features }}' >> $GITHUB_OUTPUT
             else
               echo 'features_to_test=${{ needs.find-features.outputs.all-features }}' >> $GITHUB_OUTPUT
-            fi          
+            fi
+
+          elif [ ${{ github.event_name }} == 'schedule' ]; then
+            echo 'features_to_test=${{ needs.find-features.outputs.all-features }}' >> $GITHUB_OUTPUT
           fi
 
       - name: binning
@@ -125,6 +127,34 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Check if the disk has to be cleaned up
+        id: check-disk-space-requiement
+        run: |
+          # Array of features that require more disk storage
+          # If there's a feature that fails during tests due to lack of disk space, add it here
+          features_that_require_more_disk_storage=("homebrew-package" "haskell")
+
+          # Array of features to test from comma separated list passed in matrix.features
+          IFS=',' read -r -a features_to_test <<< "${{ matrix.features }}"
+
+          # Check if any feature to test requires more disk storage
+          # If so, set the output to true
+          for feature in "${features_that_require_more_disk_storage[@]}"; do
+            for f in "${features_to_test[@]}"; do
+              if [ "$f" == "$feature" ]; then
+                echo "clean_disk_space=true" >> "$GITHUB_OUTPUT"
+              fi
+            done
+          done
+
+      - name: Free Disk Space
+        uses: jlumbroso/free-disk-space@main
+        if: ${{ steps.check-disk-space-requiement.outputs.clean_disk_space == 'true' }}
+        with:
+          tool-cache: false
+          docker-images: false
+          swap-storage: false
+
       - name: "Install latest devcontainer CLI"
         run: npm install -g @devcontainers/cli
 
@@ -140,12 +170,12 @@ jobs:
 
           # install shellcheck
           comma_separated_features=${{ matrix.features }}
-          
-          for i in ${comma_separated_features//,/ } 
+
+          for i in ${comma_separated_features//,/ }
           do
-            shellcheck --severity=error -e SC2148 src/"$i"/*.sh 
+            shellcheck --severity=error -e SC2148 src/"$i"/*.sh
           done
-        
+
   test-global:
     runs-on: ubuntu-latest
     continue-on-error: true
