@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/gh-release"
+        "ghcr.io/ndbrew/devcontainer-features/gh-release"
     ]
 }

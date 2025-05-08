@@ -2,7 +2,7 @@
     "id": "argocd-asdf",
     "version": "0.0.1",
     "name": "argocd (via asdf)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/argocd-asdf",
+    "documentationURL": "http://github.com/ndbrew/devcontainer-features/tree/main/src/argocd-asdf",
     "description": "Declarative Continuous Deployment for Kubernetes.",
     "options": {
         "version": {

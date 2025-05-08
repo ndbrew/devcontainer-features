@@ -2,7 +2,7 @@
     "id": "yq",
     "version": "0.0.1",
     "name": "yq (via Github Releases)",
-    "documentationURL": "http://github.com/devcontainers-contrib/features/tree/main/src/yq",
+    "documentationURL": "http://github.com/ndbrew/devcontainer-features/tree/main/src/yq",
     "description": "yq is a portable command-line YAML, JSON, XML, CSV, TOML and properties processor.",
     "options": {
         "version": {
@@ -15,6 +15,6 @@
         }
     },
     "installsAfter": [
-        "ghcr.io/devcontainers-contrib/features/gh-release"
+        "ghcr.io/ndbrew/devcontainer-features/gh-release"
     ]
 }
