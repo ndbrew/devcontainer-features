@@ -1,6 +1,6 @@
 {
     "id": "pre-commit",
-    "version": "2.0.19",
+    "version": "2.0.20",
     "name": "Pre-Commit (via pipx)",
     "documentationURL": "http://github.com/ndbrew/devcontainer-features/tree/main/src/pre-commit",
     "description": "Pre-Commit is a framework for managing and maintaining multi-language pre-commit hooks.",
